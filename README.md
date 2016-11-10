@@ -7,6 +7,6 @@ I will try to push and learn at least one cool thing about Python per day starti
 
 I decided to classify by month as it follows.
 
-### November
+### November:
 **11/10/2016** - Closures;
 
