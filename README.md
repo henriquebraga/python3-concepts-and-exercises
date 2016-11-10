@@ -1,5 +1,5 @@
 ![Screenshot](http://cdn.skilledup.com/wp-content/uploads/2015/01/Python-programming-Feature_1290x688_MS.jpg)
-# Learn at least a Python cool stuff per day
+# Learn at least one Python cool stuff per day
 
 Contains some studies and exercises from my own :)
 
