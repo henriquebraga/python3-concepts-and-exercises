@@ -1,40 +1,39 @@
 #-*- coding: utf-8 -*-
 
 
-class Operation:
+class Operation(object):
 
 	def __init__(self, left_expression, right_expression):
 		self._left_expr = left_expression
 		self._right_expr = right_expression
 
 
-class Substraction:
+class Substraction(Operation):
 	
 	def __init__(self, left_expression, right_expression):
-		self._left_expr = left_expression
-		self._right_expr = right_expression
+		super(Substraction, self).__init__(left_expression, right_expression)
 
 	def __call__(self):
 		return self._left_expr() - self._right_expr()
 
 
-class Add:
+class Add(Operation):
 	
 	def __init__(self, left_expression, right_expression):
-		self._left_expr = left_expression
-		self._right_expr = right_expression
+		super(Add, self).__init__(left_expression, right_expression)
 
 	def __call__(self):
 		return self._left_expr() + self._right_expr()
 
-class Multiplication:
+
+class Multiplication(Operation):
 	
 	def __init__(self, left_expression, right_expression):
-		self._left_expr = left_expression
-		self._right_expr = right_expression
+		super(Add, self).__init__(left_expression, right_expression)
 
 	def __call__(self):
 		return self._left_expr() - self._right_expr()
+
 
 class Number:
 	'''Caso base para recursão.'''
@@ -43,6 +42,7 @@ class Number:
 
 	def __call__(self):
 		return self._num
+
 
 if __name__ == '__main__':
 
