@@ -2,6 +2,8 @@
 
 from datetime import date
 from copy import copy
+
+
 class Contract:
 
 	def __init__(self, date, customer, _type):
@@ -49,15 +51,6 @@ class Contract:
 		self.__type = state._type
 
 
-class State:
-	'''Encapsula a classe contrato.'''
-
-	def __init__(self, contract):
-		self.__contract = contract
-
-	@property
-	def contract(self):
-		return self.__contract
 
 
 class History:
